@@ -1,0 +1,139 @@
+/* FIX HTML/CSS LOGOS OVERLAPPING TEXT */
+.software-item .software-icon.html-css-icon {
+    display: flex !important;
+    flex: 0 0 48px !important;
+    width: 48px !important;
+    min-width: 48px !important;
+    max-width: 48px !important;
+    height: 48px !important;
+    gap: 2px !important;
+    overflow: hidden !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.software-item .software-icon.html-css-icon img {
+    display: block !important;
+    flex: 0 0 21px !important;
+    width: 21px !important;
+    min-width: 21px !important;
+    max-width: 21px !important;
+    height: 28px !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+}
+
+.software-item .software-info {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    overflow-wrap: anywhere;
+}
+
+/* FIX HTML/CSS LOGOS OVERLAPPING TEXT */
+.software-item .software-icon.html-css-icon {
+    display: flex !important;
+    flex: 0 0 48px !important;
+    width: 48px !important;
+    min-width: 48px !important;
+    max-width: 48px !important;
+    height: 48px !important;
+    gap: 2px !important;
+    overflow: hidden !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.software-item .software-icon.html-css-icon img {
+    display: block !important;
+    flex: 0 0 28px !important;
+    width: 28px !important;
+    min-width: 28px !important;
+    max-width: 28px !important;
+    height: 34px !important;
+    object-fit: contain !important;
+    margin: 0 !important;
+}
+
+.software-item .software-info {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    overflow-wrap: anywhere;
+}
+
+.github-icon {
+    color: #252522;
+}
+
+/* TEXT */
+.software-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.software-info h3 {
+    color: #292a2e;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.software-info p {
+    color: #77766f;
+    font-size: 11px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+/* ARROW */
+.software-arrow {
+    width: 27px;
+    min-width: 27px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e2eae7;
+    color: #438c87;
+    font-size: 17px;
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.software-item:hover .software-arrow {
+    transform: translate(2px, -2px);
+    background: #438c87;
+    color: #ffffff;
+}
+
+/* DARK MODE */
+body.dark-mode .software-item {
+    background: #242626;
+    border-color: #454949;
+}
+
+body.dark-mode .software-item:hover {
+    border-color: #65b8b0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+body.dark-mode .software-heading h2,
+body.dark-mode .software-info h3 {
+    color: #f0eee8;
+}
+
+body.dark-mode .software-description,
+body.dark-mode .software-info p {
+    color: #bcbdb8;
+}
+
+body.dark-mode .github-icon {
+    color: #f0eee8;
+}
+
+body.dark-mode .software-arrow {
+    background: #303b39;
+    color: #8fd0c7;
+}
