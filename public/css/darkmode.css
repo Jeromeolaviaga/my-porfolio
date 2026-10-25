@@ -1,0 +1,153 @@
+/* Dark Mode Button */
+.theme-toggle {
+    position: fixed;
+    top: 22px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 17px 7px 7px;
+    border: 1px solid #d8d2c6;
+    border-radius: 50px;
+    background: #faf9f5;
+    color: #292a2e;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-2px);
+}
+
+.theme-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #292a2e;
+    color: #f6e6b5;
+}
+
+.theme-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Keep the outside beige */
+body.dark-mode {
+    background: #e9e6df !important;
+    color: #252522;
+}
+
+/* Darken only the portfolio card */
+body.dark-mode .portfolio {
+    background: #242424 !important;
+    color: #f0eee8;
+}
+
+/* Text inside the card */
+body.dark-mode .portfolio h1,
+body.dark-mode .portfolio h2,
+body.dark-mode .portfolio strong {
+    color: #f0eee8;
+}
+
+body.dark-mode .portfolio p,
+body.dark-mode .portfolio .muted,
+body.dark-mode .portfolio .intro,
+body.dark-mode .portfolio .software-name {
+    color: #c5c3bc;
+}
+
+body.dark-mode .portfolio .accent {
+    color: #65b8b0;
+}
+
+body.dark-mode .portfolio .item,
+body.dark-mode .portfolio footer {
+    border-color: #454545;
+}
+
+body.dark-mode .portfolio .tag {
+    background: #303b39;
+    color: #a8d8d0;
+    border-color: #438c87;
+}
+
+body.dark-mode .theme-toggle {
+    background: #292a2e;
+    color: #f4f0e8;
+    border-color: #45464b;
+}
+
+body.dark-mode .theme-icon {
+    background: #f6e6b5;
+    color: #292a2e;
+}
+
+@media (max-width: 600px) {
+    .theme-toggle {
+        top: 14px;
+        right: 14px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e9e6df;
+    color: #252522;
+    font-family: Arial, sans-serif;
+    padding: 24px;
+    line-height: 1.6;
+}
+
+.portfolio {
+    max-width: 1000px;
+    margin: auto;
+    padding: 48px;
+    background: #faf9f5;
+    border-radius: 20px;
+}
+
+h1,
+h2 {
+    font-family: Georgia, serif;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 54px);
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+
+.accent {
+    color: #438c87;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 35px;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.intro {
+    margin-top: 20px;
+    color: #62625d;
+}

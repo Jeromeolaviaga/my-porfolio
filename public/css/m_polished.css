@@ -1,0 +1,400 @@
+  /* ===== Minimal, polished portfolio theme ===== */
+    :root {
+      --minimal-ink: #17191c;
+      --minimal-muted: #666d76;
+      --minimal-line: #e7e9ed;
+      --minimal-accent: #4169e1;
+      --minimal-surface: #ffffff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      padding: 36px 20px;
+      color: var(--minimal-ink);
+      background: #f5f6f8;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    .portfolio {
+      max-width: 1060px;
+      padding: clamp(26px, 5vw, 64px);
+      background: #fff;
+      color: var(--minimal-ink);
+      border: 1px solid #eceef1;
+      border-radius: 22px;
+      box-shadow: 0 18px 60px rgba(22, 30, 50, .06);
+      animation: minimalEnter .55s ease-out both;
+    }
+
+    @keyframes minimalEnter {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1,
+    h2,
+    .software-heading h2,
+    .contact-section h2 {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #17191c;
+      letter-spacing: -.045em;
+    }
+
+    h1 {
+      font-size: clamp(34px, 5vw, 56px);
+      font-weight: 750;
+      line-height: 1.1;
+    }
+
+    h2,
+    .contact-section h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .accent {
+      color: var(--minimal-accent);
+      background: none;
+      -webkit-text-fill-color: currentColor;
+    }
+
+    .intro {
+      max-width: 590px;
+      margin-top: 18px;
+      color: var(--minimal-muted);
+      font-size: 16px;
+    }
+
+    .hero {
+      gap: 44px;
+      margin-bottom: 58px;
+    }
+
+    .profile {
+      width: 270px;
+      height: 270px;
+      padding: 0;
+      border-radius: 22px;
+      overflow: hidden;
+      background: #f0f2f5;
+      box-shadow: none;
+      animation: none;
+    }
+
+    .profile img {
+      border: 0;
+      border-radius: 22px;
+    }
+
+    .profile-hover:hover .profile-alternate {
+      transform: scale(1.025);
+    }
+
+    section {
+      margin-bottom: 42px;
+    }
+
+    .item {
+      padding: 17px 0;
+      border-bottom: 1px solid var(--minimal-line);
+    }
+
+    .item strong {
+      color: #20242a;
+      font-weight: 650;
+      line-height: 1.5;
+    }
+
+    .muted,
+    .software-description,
+    .software-info p {
+      color: var(--minimal-muted);
+    }
+
+    .tags {
+      gap: 9px;
+    }
+
+    .tag {
+      padding: 7px 12px;
+      color: #374151;
+      background: #f7f8fa;
+      border: 1px solid #e8eaee;
+      border-radius: 8px;
+      font-size: 13px;
+      transition: background .2s ease, border-color .2s ease, transform .2s ease;
+    }
+
+    .tag:hover {
+      transform: translateY(-2px);
+      background: #eef2ff;
+      border-color: #cbd5ff;
+    }
+
+    .contact-section {
+      margin-top: 30px;
+    }
+
+    .contact-list {
+      gap: 14px 20px;
+    }
+
+    .contact-item {
+      color: #555e6b;
+      font-size: 13px;
+    }
+
+    .contact-item:hover {
+      color: var(--minimal-accent);
+    }
+
+    .contact-icon {
+      width: 30px;
+      min-width: 30px;
+      height: 30px;
+      background: #f0f3ff;
+      border-radius: 9px;
+      transition: background .2s ease;
+    }
+
+    .contact-icon svg {
+      stroke: var(--minimal-accent);
+    }
+
+    .contact-item:hover .contact-icon {
+      background: #e2e8ff;
+    }
+
+    .software-section {
+      margin-top: 52px;
+    }
+
+    .software-heading {
+      margin-bottom: 24px;
+    }
+
+    .software-subtitle {
+      color: var(--minimal-accent);
+      font-size: 11px;
+      letter-spacing: 2px;
+    }
+
+    .software-heading h2 {
+      font-size: clamp(27px, 3vw, 34px);
+      margin-bottom: 8px;
+    }
+
+    .software-description {
+      max-width: 520px;
+      font-size: 14px;
+    }
+
+    .software-grid {
+      gap: 12px;
+    }
+
+    .software-item {
+      padding: 18px 16px;
+      border: 1px solid #e9ebef;
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: none;
+      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+
+    .software-item::before {
+      display: none;
+    }
+
+    .software-item:hover {
+      transform: translateY(-3px);
+      border-color: #cbd5ff;
+      background: #fff;
+      box-shadow: 0 10px 25px rgba(25, 40, 80, .06);
+    }
+
+    .software-info h3 {
+      color: #22262c;
+      font-size: 14px;
+    }
+
+    .software-info p {
+      font-size: 12px;
+    }
+
+    .software-arrow {
+      background: #f0f3ff;
+      color: var(--minimal-accent);
+    }
+
+    .software-item:hover .software-arrow {
+      background: var(--minimal-accent);
+      color: #fff;
+    }
+
+    footer {
+      border-top: 1px solid var(--minimal-line);
+      color: #858b95;
+    }
+
+    .theme-toggle {
+      background: rgba(255, 255, 255, .94);
+      color: #292d33;
+      border: 1px solid #e6e8ec;
+      box-shadow: 0 5px 18px rgba(20, 30, 50, .08);
+      backdrop-filter: blur(12px);
+    }
+
+    .theme-icon {
+      background: #20242a;
+      color: #fff;
+    }
+
+    body.dark-mode {
+      background: #111318 !important;
+      color: #f1f3f6;
+    }
+
+    body.dark-mode .portfolio {
+      background: #191c22 !important;
+      color: #f1f3f6;
+      border-color: #2a2e36;
+      box-shadow: 0 18px 60px rgba(0, 0, 0, .22);
+    }
+
+    body.dark-mode .portfolio h1,
+    body.dark-mode .portfolio h2,
+    body.dark-mode .portfolio strong,
+    body.dark-mode .software-heading h2,
+    body.dark-mode .software-info h3,
+    body.dark-mode .contact-section h2 {
+      color: #f1f3f6;
+    }
+
+    body.dark-mode .portfolio p,
+    body.dark-mode .portfolio .muted,
+    body.dark-mode .portfolio .intro,
+    body.dark-mode .software-description,
+    body.dark-mode .software-info p {
+      color: #a9b0bc;
+    }
+
+    body.dark-mode .portfolio .accent {
+      color: #8ba4ff;
+    }
+
+    body.dark-mode .portfolio .item,
+    body.dark-mode .portfolio footer {
+      border-color: #30343d;
+    }
+
+    body.dark-mode .portfolio .tag {
+      background: #222630;
+      color: #d7dce6;
+      border-color: #343946;
+    }
+
+    body.dark-mode .contact-item {
+      color: #b7bfcc;
+    }
+
+    body.dark-mode .contact-icon {
+      background: #252b3a;
+    }
+
+    body.dark-mode .contact-icon svg {
+      stroke: #9badff;
+    }
+
+    body.dark-mode .software-item {
+      background: #1d2129;
+      border-color: #30343d;
+    }
+
+    body.dark-mode .software-item:hover {
+      background: #202630;
+      border-color: #657bd1;
+    }
+
+    body.dark-mode .software-arrow {
+      background: #252b3a;
+      color: #a9b8ff;
+    }
+
+    body.dark-mode .theme-toggle {
+      background: #20242a;
+      color: #f1f3f6;
+      border-color: #383d46;
+    }
+
+    body.dark-mode .theme-icon {
+      background: #e9edf5;
+      color: #20242a;
+    }
+
+    body.dark-mode .github-icon {
+      color: #f1f3f6;
+    }
+
+    body a.messenger-float {
+      width: 52px !important;
+      height: 52px !important;
+      min-width: 52px !important;
+      max-width: 52px !important;
+      min-height: 52px !important;
+      max-height: 52px !important;
+      box-shadow: 0 5px 16px rgba(0, 80, 200, .18) !important;
+    }
+
+    @media (max-width: 650px) {
+      body {
+        padding: 76px 12px 18px;
+      }
+
+      .portfolio {
+        padding: 28px 22px;
+        border-radius: 18px;
+      }
+
+      .hero,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        gap: 28px;
+      }
+
+      .profile {
+        width: min(100%, 250px);
+        height: 250px;
+        justify-self: start;
+      }
+
+      .contact-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
