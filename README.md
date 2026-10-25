@@ -18,10 +18,13 @@ This is my personal portfolio where I showcase my skills, projects, and a little
 - HTML
 - CSS
 - JavaScript
+- Laravel
+- Mysql
 
 ## Preview
 
-![Portfolio Screenshot](images/portfolio.png)
+![Portfolio Screenshot](images/<img width="1895" height="905" alt="image" src="https://github.com/user-attachments/assets/ec55bc38-ac52-4198-b515-ef1a329ab540" />
+)
 
 ## Getting Started
 
@@ -37,6 +40,6 @@ I'm a Computer Science graduate currently improving my skills in web development
 
 ## Contact
 
-GitHub: [Your GitHub Profile](YOUR_GITHUB_LINK)
+GitHub: [Your GitHub Profile]([YOUR_GITHUB_LINK](https://github.com/Jeromeolaviaga/my-porfolio))
 
-Email: YOUR_EMAIL
+Email: olaviagajerome45@gmail.com
