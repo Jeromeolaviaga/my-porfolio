@@ -23,7 +23,7 @@ This is my personal portfolio where I showcase my skills, projects, and a little
 
 ## Preview
 
-![Portfolio Screenshot](images/<img width="1895" height="905" alt="image" src="https://github.com/user-attachments/assets/ec55bc38-ac52-4198-b515-ef1a329ab540" />
+<img width="1895" height="905" alt="image" src="https://github.com/user-attachments/assets/ec55bc38-ac52-4198-b515-ef1a329ab540" />
 )
 
 ## Getting Started
