@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="{{ asset('css/tech_icons.css') }}">
   <link rel="stylesheet" href="{{ asset('css/fix_overlapping.css') }}">
   <link rel="stylesheet" href="{{ asset('css/float_mess.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/float_galaxy.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/galaxy.css') }}">
   <link rel="stylesheet" href="{{ asset('css/m_polished.css') }}">
   <link rel="stylesheet" href="{{ asset('css/subtle.css') }}">
   <link rel="stylesheet" href="{{ asset('css/premium.css') }}">
@@ -236,7 +236,7 @@
           class="profile-default">
 
         <img
-          src="{{ asset('image/what.jpg') }}"
+          src="{{ asset('image/myy.jpg') }}"
           alt="Jerome Olaviaga alternate photo"
           class="profile-alternate">
       </div>
